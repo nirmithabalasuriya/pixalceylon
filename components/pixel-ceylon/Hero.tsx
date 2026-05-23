@@ -1,0 +1,110 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import ContactForm from './ContactForm';
+
+const badges = [
+  { icon: '⚡', label: '2–3 Week Delivery' },
+  { icon: '🌍', label: '4+ Countries Served' },
+  { icon: '✦', label: '23+ Happy Clients' },
+];
+
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden"
+      style={{ background: '#07080D' }}
+    >
+      {/* Radial glow background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 800px 600px at 20% 50%, rgba(200,255,0,0.06) 0%, transparent 70%), radial-gradient(ellipse 600px 500px at 80% 30%, rgba(100,120,255,0.04) 0%, transparent 70%)',
+        }}
+      />
+
+      {/* Pixel deco */}
+      <div className="absolute top-16 right-16 opacity-[0.035] pointer-events-none hidden lg:block">
+        <svg width="180" height="180" viewBox="0 0 200 200">
+          {[[0,0],[16,16],[32,0],[48,32],[0,48],[64,16],[80,48],[16,64],[96,0]].map(([x,y],i) => (
+            <rect key={i} x={x} y={y} width="8" height="8" fill="#C8FF00" />
+          ))}
+        </svg>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto px-6 md:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-20 items-center">
+          {/* Left */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.65, delay: 0.05 }}
+              className="flex items-center gap-3 mb-7"
+            >
+              <span className="w-2 h-2 rounded-full bg-[#C8FF00] pulse-dot block" />
+              <span style={{ fontFamily: 'var(--font-space-mono, monospace)' }} className="text-[11px] text-[#7E8190] tracking-[0.12em] uppercase">
+                Sri Lanka&apos;s Digital Agency
+              </span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.65, delay: 0.15 }}
+              style={{
+                fontFamily: 'var(--font-bebas, sans-serif)',
+                fontSize: 'clamp(58px, 8vw, 100px)',
+                lineHeight: 0.93,
+                letterSpacing: '0.01em',
+                color: 'white',
+              }}
+              className="mb-6"
+            >
+              BUILDING
+              <br />
+              <span style={{ WebkitTextStroke: '1.5px #C8FF00', color: 'transparent' }}>
+                DIGITAL
+              </span>
+              <br />
+              EXCELLENCE
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.65, delay: 0.25 }}
+              className="text-[17px] text-[#7E8190] leading-relaxed max-w-[460px] mb-8"
+            >
+              We craft high-performance websites and data-driven digital marketing strategies that turn clicks into customers — pixel by pixel.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.65, delay: 0.35 }}
+              className="flex flex-wrap gap-2.5"
+            >
+              {badges.map((b) => (
+                <div
+                  key={b.label}
+                  className="flex items-center gap-2 bg-[#0F1117] border border-[#1E2130] rounded-lg px-3.5 py-2 text-[13px] text-[#E8E9EF]"
+                >
+                  <span className="text-[#C8FF00] font-bold text-base">{b.icon}</span>
+                  {b.label}
+                </div>
+              ))}
+            </motion.div>
+          </div>
+
+          {/* Right — Contact Form */}
+          <div id="contact">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
