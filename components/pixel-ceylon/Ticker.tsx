@@ -1,7 +1,7 @@
 'use client';
 
 const logos = [
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png', alt: 'Amazon', h: 20 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg', alt: 'Amazon', h: 20 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png', alt: 'Netflix', h: 20 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Googlelogo_2013.svg/1000px-Googlelogo_2013.svg.png', alt: 'Google', h: 22 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1000px-IBM_logo.svg.png', alt: 'IBM', h: 22 },
