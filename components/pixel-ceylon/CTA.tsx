@@ -18,7 +18,7 @@ export default function CTA() {
           className="grid grid-cols-1 lg:grid-cols-[1fr_auto] items-center gap-12"
         >
           <div>
-            <span className="inline-block bg-[#C8FF00]/10 text-[#C8FF00] border border-[#C8FF00]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-6">
+            <span className="inline-block bg-[#b5e409]/10 text-[#b5e409] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-6">
               Start Today
             </span>
             <h2
@@ -36,7 +36,7 @@ export default function CTA() {
           <div className="flex flex-col gap-3 min-w-[220px]">
             <a
               href="#contact"
-              className="bg-[#C8FF00] text-black font-bold text-[15px] px-8 py-4 rounded-xl text-center hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
+              className="bg-[#b5e409] text-black font-bold text-[15px] px-8 py-4 rounded-xl text-center hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
             >
               Book a Free Call →
             </a>

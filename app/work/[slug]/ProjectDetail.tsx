@@ -170,7 +170,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
                   href={project.external_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-5 rounded-xl bg-[#C8FF00] text-black font-bold text-sm hover:bg-[#A8D900] transition-all duration-200 group"
+                  className="flex items-center justify-between p-5 rounded-xl bg-[#b5e409] text-black font-bold text-sm hover:bg-[#A8D900] transition-all duration-200 group"
                 >
                   <span className="flex items-center gap-2">
                     <ExternalLink className="w-4 h-4" />
@@ -209,10 +209,10 @@ export default function ProjectDetail({ project }: { project: Project }) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08, duration: 0.5 }}
-                  className="flex items-start gap-3 p-5 rounded-xl bg-[#0F1117] border border-[#1E2130] hover:border-[#C8FF00]/20 transition-colors"
+                  className="flex items-start gap-3 p-5 rounded-xl bg-[#0F1117] border border-[#1E2130] hover:border-[#b5e409]/20 transition-colors"
                 >
-                  <div className="w-5 h-5 rounded-full bg-[#C8FF00]/10 border border-[#C8FF00]/30 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check className="w-2.5 h-2.5 text-[#C8FF00]" />
+                  <div className="w-5 h-5 rounded-full bg-[#b5e409]/10 border border-[#b5e409]/30 flex items-center justify-center shrink-0 mt-0.5">
+                    <Check className="w-2.5 h-2.5 text-[#b5e409]" />
                   </div>
                   <span className="text-[#E8E9EF] text-sm leading-relaxed">{feature}</span>
                 </motion.div>
@@ -273,7 +273,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
             <p className="text-[#7E8190] text-sm mb-4">Ready to start your project?</p>
             <a
               href="/#contact"
-              className="inline-flex items-center gap-2 bg-[#C8FF00] text-black font-bold text-sm px-7 py-4 rounded-xl hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#b5e409] text-black font-bold text-sm px-7 py-4 rounded-xl hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
             >
               Get a Free Proposal
               <ArrowUpRight className="w-4 h-4" />

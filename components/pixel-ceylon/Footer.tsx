@@ -60,14 +60,14 @@ export default function Footer() {
               }}
             >
               <div
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full border border-[#C8FF00]/20 flex items-center justify-center"
+                className="w-24 h-24 md:w-28 md:h-28 rounded-full border border-[#b5e409]/20 flex items-center justify-center"
                 style={{
                   background: 'linear-gradient(135deg, rgba(15, 17, 23, 0.9) 0%, rgba(7, 8, 13, 0.95) 100%)',
                   backdropFilter: 'blur(12px)',
                   boxShadow: '0 0 40px rgba(200, 255, 0, 0.08), inset 0 0 30px rgba(200, 255, 0, 0.03)',
                 }}
               >
-                <span className="font-['Bebas_Neue'] text-2xl md:text-3xl tracking-[0.15em] text-[#C8FF00]">
+                <span className="font-['Bebas_Neue'] text-2xl md:text-3xl tracking-[0.15em] text-[#b5e409]">
                   PC
                 </span>
               </div>
@@ -86,7 +86,7 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center mb-14">
             {/* Logo */}
             <div className="font-['Bebas_Neue'] text-[28px] tracking-[0.2em] text-white mb-4">
-              PIXEL <span className="text-[#C8FF00]">CEYLON</span>
+              PIXEL <span className="text-[#b5e409]">CEYLON</span>
             </div>
 
             {/* Tagline */}
@@ -114,7 +114,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="w-10 h-10 rounded-full border border-[#2A2D3A] flex items-center justify-center text-[#7E8190] hover:border-[#C8FF00]/40 hover:text-[#C8FF00] transition-all duration-300 hover:bg-[#C8FF00]/5"
+                  className="w-10 h-10 rounded-full border border-[#2A2D3A] flex items-center justify-center text-[#7E8190] hover:border-[#b5e409]/40 hover:text-[#b5e409] transition-all duration-300 hover:bg-[#b5e409]/5"
                 >
                   <Icon className="w-4 h-4" />
                 </a>
@@ -127,12 +127,12 @@ export default function Footer() {
                 href="mailto:hello@pixelceylon.com"
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
-                <Mail className="w-4 h-4 text-[#C8FF00]" />
+                <Mail className="w-4 h-4 text-[#b5e409]" />
                 hello@pixelceylon.com
               </a>
               <div className="hidden sm:block w-1 h-1 rounded-full bg-[#3A3D4A]" />
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#C8FF00]" />
+                <MapPin className="w-4 h-4 text-[#b5e409]" />
                 <span>Colombo, Sri Lanka</span>
               </div>
             </div>

@@ -44,7 +44,7 @@ export default function Nav() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-4 flex items-center justify-between gap-8">
           {/* Logo */}
           <a href="#home" className="font-['Bebas_Neue'] text-2xl tracking-widest text-white shrink-0">
-            PIXEL <span className="text-[#C8FF00]">CEYLON</span>
+            PIXEL <span className="text-[#b5e409]">CEYLON</span>
           </a>
 
           {/* Desktop links */}
@@ -64,7 +64,7 @@ export default function Nav() {
           {/* CTA */}
           <a
             href="#contact"
-            className="hidden md:block bg-[#C8FF00] text-black text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5 shrink-0"
+            className="hidden md:block bg-[#b5e409] text-black text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5 shrink-0"
           >
             Book a Call
           </a>
@@ -95,7 +95,7 @@ export default function Nav() {
                 <li key={l.label}>
                   <button
                     onClick={() => handleLink(l.href)}
-                    className="text-base font-medium text-[#E8E9EF] hover:text-[#C8FF00] transition-colors w-full text-left"
+                    className="text-base font-medium text-[#E8E9EF] hover:text-[#b5e409] transition-colors w-full text-left"
                   >
                     {l.label}
                   </button>
@@ -105,7 +105,7 @@ export default function Nav() {
                 <a
                   href="#contact"
                   onClick={() => setMobileOpen(false)}
-                  className="block bg-[#C8FF00] text-black text-sm font-bold px-5 py-3 rounded-lg text-center mt-2"
+                  className="block bg-[#b5e409] text-black text-sm font-bold px-5 py-3 rounded-lg text-center mt-2"
                 >
                   Book a Call
                 </a>

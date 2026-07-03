@@ -16,20 +16,33 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden"
       style={{ background: '#FFFFFF' }}
     >
-      {/* Subtle gradient background */}
+      {/* Premium subtle dot grid texture */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.04]"
+        style={{
+          backgroundImage: `radial-gradient(circle, #0A0A0A 1px, transparent 1px)`,
+          backgroundSize: '32px 32px',
+        }}
+      />
+
+      {/* Soft mesh gradient overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 800px 600px at 20% 50%, rgba(200,255,0,0.08) 0%, transparent 70%), radial-gradient(ellipse 600px 500px at 80% 30%, rgba(100,120,255,0.05) 0%, transparent 70%)',
+            'radial-gradient(ellipse 800px 600px at 20% 50%, rgba(181,228,9,0.07) 0%, transparent 70%), radial-gradient(ellipse 600px 500px at 85% 20%, rgba(100,120,255,0.04) 0%, transparent 70%), radial-gradient(ellipse 400px 400px at 10% 80%, rgba(181,228,9,0.03) 0%, transparent 70%)',
         }}
       />
 
+      {/* Blurred organic shapes */}
+      <div className="absolute top-20 right-[15%] w-[400px] h-[400px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(181,228,9,0.06) 0%, transparent 70%)', filter: 'blur(80px)' }} />
+      <div className="absolute bottom-20 left-[10%] w-[300px] h-[300px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(100,120,255,0.04) 0%, transparent 70%)', filter: 'blur(60px)' }} />
+
       {/* Pixel deco */}
-      <div className="absolute top-16 right-16 opacity-[0.08] pointer-events-none hidden lg:block">
+      <div className="absolute top-16 right-16 opacity-[0.06] pointer-events-none hidden lg:block">
         <svg width="180" height="180" viewBox="0 0 200 200">
           {[[0,0],[16,16],[32,0],[48,32],[0,48],[64,16],[80,48],[16,64],[96,0]].map(([x,y],i) => (
-            <rect key={i} x={x} y={y} width="8" height="8" fill="#0A0A0A" />
+            <rect key={i} x={x} y={y} width="8" height="8" fill="#b5e409" />
           ))}
         </svg>
       </div>
@@ -44,7 +57,7 @@ export default function Hero() {
               transition={{ duration: 0.65, delay: 0.05 }}
               className="flex items-center gap-3 mb-7"
             >
-              <span className="w-2 h-2 rounded-full bg-[#C8FF00] pulse-dot block" />
+              <span className="w-2 h-2 rounded-full bg-[#b5e409] pulse-dot block" />
               <span style={{ fontFamily: 'var(--font-space-mono, monospace)' }} className="text-[11px] text-[#6B7280] tracking-[0.12em] uppercase">
                 Sri Lanka&apos;s Digital Agency
               </span>
@@ -65,7 +78,7 @@ export default function Hero() {
             >
               BUILDING
               <br />
-              <span style={{ WebkitTextStroke: '1.5px #C8FF00', color: 'transparent' }}>
+              <span style={{ WebkitTextStroke: '1.5px #b5e409', color: 'transparent' }}>
                 DIGITAL
               </span>
               <br />

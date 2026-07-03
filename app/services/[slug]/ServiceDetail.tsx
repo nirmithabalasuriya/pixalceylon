@@ -97,7 +97,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65 }}
           >
-            <div className="font-mono text-[11px] text-[#C8FF00] tracking-[0.12em] mb-4">
+            <div className="font-mono text-[11px] text-[#b5e409] tracking-[0.12em] mb-4">
               {service.num}
             </div>
             <h1
@@ -165,10 +165,10 @@ export default function ServiceDetail({ service }: { service: Service }) {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.05, duration: 0.4 }}
-                      className="flex items-center gap-3 p-4 rounded-xl bg-[#0F1117] border border-[#1E2130] hover:border-[#C8FF00]/20 transition-colors"
+                      className="flex items-center gap-3 p-4 rounded-xl bg-[#0F1117] border border-[#1E2130] hover:border-[#b5e409]/20 transition-colors"
                     >
-                      <div className="w-5 h-5 rounded-full bg-[#C8FF00]/10 border border-[#C8FF00]/30 flex items-center justify-center shrink-0">
-                        <Check className="w-2.5 h-2.5 text-[#C8FF00]" />
+                      <div className="w-5 h-5 rounded-full bg-[#b5e409]/10 border border-[#b5e409]/30 flex items-center justify-center shrink-0">
+                        <Check className="w-2.5 h-2.5 text-[#b5e409]" />
                       </div>
                       <span className="text-[#E8E9EF] text-sm">{feature}</span>
                     </motion.div>
@@ -190,15 +190,15 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 <p className="text-[#A0A1B0] text-sm mb-5">Let us help you achieve your goals with our {service.name.toLowerCase()} expertise.</p>
                 <a
                   href="/#contact"
-                  className="flex items-center justify-between p-4 rounded-xl bg-[#C8FF00] text-black font-bold text-sm hover:bg-[#A8D900] transition-all duration-200 group"
+                  className="flex items-center justify-between p-4 rounded-xl bg-[#b5e409] text-black font-bold text-sm hover:bg-[#A8D900] transition-all duration-200 group"
                 >
                   <span>Get a Free Quote</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
               </div>
 
-              <div className="p-6 rounded-xl bg-gradient-to-br from-[#C8FF00]/5 to-transparent border border-[#C8FF00]/15">
-                <p className="text-[11px] font-semibold text-[#C8FF00] uppercase tracking-[0.1em] mb-2">Free Consultation</p>
+              <div className="p-6 rounded-xl bg-gradient-to-br from-[#b5e409]/5 to-transparent border border-[#b5e409]/15">
+                <p className="text-[11px] font-semibold text-[#b5e409] uppercase tracking-[0.1em] mb-2">Free Consultation</p>
                 <p className="text-[#7E8190] text-sm">Book a 30-minute discovery call to discuss your project.</p>
               </div>
             </motion.aside>
@@ -245,7 +245,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                         viewport={{ once: true }}
                         transition={{ delay: i * 0.04, duration: 0.35 }}
                         className={`px-5 py-3 rounded-xl bg-gradient-to-br border ${
-                          categoryColors[category] || 'from-[#C8FF00]/10 to-[#C8FF00]/5 border-[#C8FF00]/25'
+                          categoryColors[category] || 'from-[#b5e409]/10 to-[#b5e409]/5 border-[#b5e409]/25'
                         } hover:scale-105 transition-transform duration-200`}
                       >
                         <span className="text-white font-semibold text-sm">{tech.name}</span>
@@ -271,7 +271,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
             <p className="text-[#7E8190] text-sm mb-4">Ready to get started?</p>
             <a
               href="/#contact"
-              className="inline-flex items-center gap-2 bg-[#C8FF00] text-black font-bold text-sm px-7 py-4 rounded-xl hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#b5e409] text-black font-bold text-sm px-7 py-4 rounded-xl hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
             >
               Get a Free Proposal
               <ArrowUpRight className="w-4 h-4" />
