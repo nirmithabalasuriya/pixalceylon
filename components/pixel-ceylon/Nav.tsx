@@ -44,7 +44,7 @@ export default function Nav() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-4 flex items-center justify-between gap-8">
           {/* Logo */}
           <a href="#home" className="font-['Bebas_Neue'] text-2xl tracking-widest text-white shrink-0">
-            <span className="text-[#b5e409]">PIXEL</span> <span className="text-[#b5e409]">CEYLON</span>
+            <span className="text-[#60A5FA]">PIXEL</span> <span className="text-[#b5e409]">CEYLON</span>
           </a>
 
           {/* Desktop links */}
