@@ -18,7 +18,7 @@ export default function CTA() {
           className="grid grid-cols-1 lg:grid-cols-[1fr_auto] items-center gap-12"
         >
           <div>
-            <span className="inline-block bg-[#b5e409]/10 text-[#b5e409] border border-[#60A5FA]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-6">
+            <span className="inline-block bg-[#60A5FA]/10 text-[#60A5FA] border border-[#60A5FA]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-6">
               Start Today
             </span>
             <h2
