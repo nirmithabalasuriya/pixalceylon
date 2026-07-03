@@ -90,7 +90,7 @@ export default function Projects() {
           className="flex justify-between items-end mb-12"
         >
           <div>
-            <span className="inline-block bg-[#b5e409]/10 text-[#b5e409] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-4">
+            <span className="inline-block bg-[#60A5FA]/10 text-[#60A5FA] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-4">
               Case Studies
             </span>
             <h2
@@ -100,7 +100,7 @@ export default function Projects() {
               Our Work
             </h2>
           </div>
-          <a href="#" className="text-sm font-semibold text-[#b5e409] hover:underline hidden sm:block">
+          <a href="#" className="text-sm font-semibold text-[#60A5FA] hover:underline hidden sm:block">
             View all projects →
           </a>
         </motion.div>
