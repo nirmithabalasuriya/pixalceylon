@@ -3,11 +3,11 @@
 const logos = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg', alt: 'Nextjs', h: 25 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', alt: 'tailwind', h: 28 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg', alt: 'AWS', h: 28 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg', alt: 'Figma', h: 28 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg', alt: 'Wordpress', h: 28 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg', alt: 'AWS', h: 30 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg', alt: 'Figma', h: 30 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg', alt: 'Wordpress', h: 30 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg', alt: 'Github', h: 25 },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Google_Cloud_icon_%282026%29.svg', alt: 'googlecloud', h: 28 },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Google_Cloud_icon_%282026%29.svg', alt: 'googlecloud', h: 30 },
     { src: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Webflow_logo.svg', alt: 'webflow', h: 28 },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg', alt: 'react', h: 28 },
 ];
