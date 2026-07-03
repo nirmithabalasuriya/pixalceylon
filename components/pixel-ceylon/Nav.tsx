@@ -53,7 +53,7 @@ export default function Nav() {
               <li key={l.label}>
                 <button
                   onClick={() => handleLink(l.href)}
-                  className="text-sm font-semibold text-[#4C4C4C] hover:text-white transition-colors duration-200"
+                  className="text-sm font-semibold text-[#4C4C4C] hover:text-gray transition-colors duration-200"
                 >
                   {l.label}
                 </button>
