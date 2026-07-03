@@ -36,7 +36,7 @@ export default function CTA() {
           <div className="flex flex-col gap-3 min-w-[220px]">
             <a
               href="#contact"
-              className="bg-[#60A5FA] text-black font-bold text-[15px] px-8 py-4 rounded-xl text-center hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
+              className="bg-[#60A5FA] text-black font-bold text-[15px] px-8 py-4 rounded-xl text-center hover:bg-[#60A5FA] transition-all duration-200 hover:-translate-y-0.5"
             >
               Book a Free Call →
             </a>
