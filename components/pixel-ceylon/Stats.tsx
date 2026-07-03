@@ -46,7 +46,7 @@ export default function Stats() {
         }}
       />
       {/* Diagonal technical lines */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.02]" xmlns="http://www.w3.org/2000/svg">
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.08]" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="diagonalLines" patternUnits="userSpaceOnUse" width="100" height="100">
             <line x1="0" y1="100" x2="100" y2="0" stroke="#0A0A0A" strokeWidth="0.5" />
