@@ -53,7 +53,7 @@ function ServiceCard({ s, index }: { s: typeof services[number]; index: number }
         href={`/services/${s.slug}`}
         className="group block bg-[#0F1117] p-8 hover:bg-[#181B25] transition-colors duration-300"
       >
-        <div className="font-['Space_Mono'] text-[11px] text-[#b5e409] tracking-[0.12em] mb-6">{s.num}</div>
+        <div className="font-['Space_Mono'] text-[11px] text-[#60A5FA] tracking-[0.12em] mb-6">{s.num}</div>
         <div className="w-12 h-12 rounded-xl bg-[#b5e409]/8 border border-[#b5e409]/15 flex items-center justify-center mb-6 group-hover:bg-[#b5e409]/12 transition-colors">
           <Icon className="w-5 h-5 text-[#b5e409]" />
         </div>
