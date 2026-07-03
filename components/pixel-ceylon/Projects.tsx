@@ -42,12 +42,12 @@ function ProjectRow({ p, index }: { p: typeof projects[number]; index: number })
     >
       <Link
         href={`/work/${p.slug}`}
-        className="group grid grid-cols-[60px_1fr] md:grid-cols-[60px_1fr_auto_auto] items-center gap-4 md:gap-8 px-6 md:px-8 py-6 bg-[#0F1117] border border-[#1E2130] rounded-xl hover:bg-[#181B25] hover:border-[#b5e409]/15 transition-all duration-300 block"
+        className="group grid grid-cols-[60px_1fr] md:grid-cols-[60px_1fr_auto_auto] items-center gap-4 md:gap-8 px-6 md:px-8 py-6 bg-[#0F1117] border border-[#1E2130] rounded-xl hover:bg-[#181B25] hover:border-[#60A5FA]/15 transition-all duration-300 block"
       >
         <div className="font-['Space_Mono'] text-[12px] text-[#7E8190]">{p.num}</div>
 
         <div>
-          <div className="text-lg font-bold text-white group-hover:text-[#b5e409] transition-colors duration-200">
+          <div className="text-lg font-bold text-white group-hover:text-[#60A5FA] transition-colors duration-200">
             {p.name}
           </div>
           <div className="text-[13px] text-[#7E8190] mt-0.5">{p.type}</div>
