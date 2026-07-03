@@ -14,8 +14,8 @@ const allLogos = [...logos, ...logos];
 export default function Ticker() {
   return (
     <div
-      className="overflow-hidden border-y border-[#1E2130] py-7"
-      style={{ background: '#07080D' }}
+      className="overflow-hidden border-y border-[#E5E5E5] py-7"
+      style={{ background: '#FFFFFF' }}
     >
       <div className="ticker-animate flex items-center gap-16 w-max">
         {allLogos.map((logo, i) => (
@@ -23,11 +23,11 @@ export default function Ticker() {
             <img
               src={logo.src}
               alt={logo.alt}
-              style={{ height: logo.h, opacity: 0.35, filter: 'grayscale(1) brightness(2)' }}
-              className="hover:opacity-70 transition-opacity duration-300"
+              style={{ height: logo.h, opacity: 0.5, filter: 'grayscale(1)' }}
+              className="hover:opacity-80 transition-opacity duration-300"
             />
             {i < allLogos.length - 1 && (
-              <div className="w-1 h-1 rounded-full bg-[#1E2130] ml-16 shrink-0" />
+              <div className="w-1 h-1 rounded-full bg-[#D1D5DB] ml-16 shrink-0" />
             )}
           </div>
         ))}
