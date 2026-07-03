@@ -17,7 +17,7 @@ export default function SocialProof() {
   return (
     <section style={{ background: '#FAFAFA' }} className="py-24 relative overflow-hidden">
       {/* Organic flowing wave pattern */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.10]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.03]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <defs>
           <pattern id="waves" patternUnits="userSpaceOnUse" width="200" height="100">
             <path d="M0 50 Q25 30 50 50 T100 50 T150 50 T200 50" fill="none" stroke="#b5e409" strokeWidth="0.5" opacity="0.6" />
@@ -27,11 +27,11 @@ export default function SocialProof() {
         <rect width="100%" height="100%" fill="url(#waves)" />
       </svg>
       {/* Circular mesh gradient overlay */}
-      <div className="absolute top-[20%] left-[5%] w-[500px] h-[500px] rounded-full pointer-events-none opacity-[0.04]" style={{ background: 'radial-gradient(ellipse at center, rgba(181,228,9,0.15) 0%, transparent 60%)', filter: 'blur(80px)' }} />
+      <div className="absolute top-[20%] left-[5%] w-[500px] h-[500px] rounded-full pointer-events-none opacity-[0.10]" style={{ background: 'radial-gradient(ellipse at center, rgba(181,228,9,0.15) 0%, transparent 60%)', filter: 'blur(80px)' }} />
       <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] rounded-full pointer-events-none opacity-[0.03]" style={{ background: 'radial-gradient(ellipse at center, rgba(100,120,255,0.12) 0%, transparent 60%)', filter: 'blur(60px)' }} />
       {/* Scattered dot field */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.015]"
+        className="absolute inset-0 pointer-events-none opacity-[0.15]"
         style={{
           backgroundImage: `radial-gradient(circle, #b5e409 1.5px, transparent 1.5px)`,
           backgroundSize: '60px 60px',
