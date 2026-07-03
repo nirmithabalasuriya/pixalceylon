@@ -16,25 +16,38 @@ export default function SocialProof() {
 
   return (
     <section style={{ background: '#FAFAFA' }} className="py-24 relative overflow-hidden">
-      {/* Organic flowing wave pattern */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.10]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      {/* Organic flowing curved lines - unique pattern */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ opacity: 0.07 }}>
         <defs>
-          <pattern id="waves" patternUnits="userSpaceOnUse" width="200" height="100">
-            <path d="M0 50 Q25 30 50 50 T100 50 T150 50 T200 50" fill="none" stroke="#b5e409" strokeWidth="0.5" opacity="0.6" />
-            <path d="M0 70 Q30 50 60 70 T120 70 T180 70 T200 70" fill="none" stroke="#b5e409" strokeWidth="0.3" opacity="0.10" />
+          <pattern id="socialproof-waves" patternUnits="userSpaceOnUse" width="300" height="150">
+            <path d="M0 75 Q75 40 150 75 T300 75" fill="none" stroke="#b5e409" strokeWidth="1" />
+            <path d="M0 110 Q60 85 120 110 T240 110 T300 110" fill="none" stroke="#b5e409" strokeWidth="0.7" opacity="0.7" />
+            <path d="M0 40 Q50 20 100 40 T200 40 T300 40" fill="none" stroke="#b5e409" strokeWidth="0.5" opacity="0.5" />
           </pattern>
         </defs>
-        <rect width="100%" height="100%" fill="url(#waves)" />
+        <rect width="100%" height="100%" fill="url(#socialproof-waves)" />
       </svg>
-      {/* Circular mesh gradient overlay */}
-      <div className="absolute top-[20%] left-[5%] w-[500px] h-[500px] rounded-full pointer-events-none opacity-[0.20]" style={{ background: 'radial-gradient(ellipse at center, rgba(181,228,9,0.15) 0%, transparent 60%)', filter: 'blur(80px)' }} />
-      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] rounded-full pointer-events-none opacity-[0.03]" style={{ background: 'radial-gradient(ellipse at center, rgba(100,120,255,0.12) 0%, transparent 80%)', filter: 'blur(80px)' }} />
-      {/* Scattered dot field */}
+
+      {/* Large gradient orbs */}
+      <div className="absolute top-[15%] left-0 w-[600px] h-[600px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(ellipse at 30% 30%, rgba(181,228,9,0.12) 0%, transparent 70%)', filter: 'blur(100px)', opacity: 0.6 }} />
+      <div className="absolute bottom-[5%] right-0 w-[450px] h-[450px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(ellipse at 70% 70%, rgba(100,140,255,0.08) 0%, transparent 70%)', filter: 'blur(80px)', opacity: 0.5 }} />
+
+      {/* Scattered accent dots */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.015]"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: `radial-gradient(circle, #b5e409 1.5px, transparent 1.5px)`,
-          backgroundSize: '60px 60px',
+          backgroundImage: `radial-gradient(circle, rgba(181,228,9,0.4) 1px, transparent 1px)`,
+          backgroundSize: '48px 48px',
+          opacity: 0.5,
+        }}
+      />
+
+      {/* Fine grid overlay */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px)`,
+          backgroundSize: '120px 120px',
         }}
       />
 
