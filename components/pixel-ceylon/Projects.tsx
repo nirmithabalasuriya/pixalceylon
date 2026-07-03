@@ -66,7 +66,7 @@ function ProjectRow({ p, index }: { p: typeof projects[number]; index: number })
 
         <div className="hidden md:flex items-center gap-2 text-[13px] font-semibold text-[#b5e409]">
           View Case Study
-          <div className="w-9 h-9 rounded-full border border-[#b5e409]/30 flex items-center justify-center group-hover:bg-[#b5e409] group-hover:border-[#b5e409] transition-all duration-200">
+          <div className="w-9 h-9 rounded-full border border-[#60A5FA]/30 flex items-center justify-center group-hover:bg-[#60A5FA] group-hover:border-[#60A5FA] transition-all duration-200">
             <ArrowUpRight className="w-4 h-4 group-hover:text-black text-[#b5e409] transition-colors duration-200" />
           </div>
         </div>
