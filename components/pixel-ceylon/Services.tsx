@@ -89,7 +89,7 @@ export default function Services() {
             className="font-['Bebas_Neue'] leading-none text-white mb-4"
             style={{ fontSize: 'clamp(38px, 5vw, 62px)' }}
           >
-            Services That <span className="text-[#b5e409]">Drive Growth</span>
+            Services That <span className="text-[#60A5FA]">Drive Growth</span>
           </h2>
           <p className="text-base text-[#7E8190] max-w-[480px]">
             From pixel-perfect designs to campaigns that convert — we cover every layer of your digital presence.
