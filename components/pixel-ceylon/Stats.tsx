@@ -76,6 +76,14 @@ export default function Stats() {
             Why Clients <span className="text-[#b5e409]">Trust Us</span>
           </h2>
         </motion.div>
+         {/* Pixel deco */}
+      <div className="absolute top-16 right-16 opacity-[0.50] pointer-events-none hidden lg:block">
+        <svg width="180" height="180" viewBox="0 0 200 200">
+          {[[0,0],[16,16],[32,0],[48,32],[0,48],[64,16],[80,48],[16,64],[96,0]].map(([x,y],i) => (
+            <rect key={i} x={x} y={y} width="8" height="8" fill="#b5e409" />
+          ))}
+        </svg>
+      </div>
 
         {/* Bento grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
