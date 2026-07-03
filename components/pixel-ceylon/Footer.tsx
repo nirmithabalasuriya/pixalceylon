@@ -86,7 +86,7 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center mb-14">
             {/* Logo */}
             <div className="font-['Bebas_Neue'] text-[28px] tracking-[0.2em] text-white mb-4">
-              PIXEL <span className="text-[#b5e409]">CEYLON</span>
+              <span className="text-[#60A5FA]">PIXEL</span> <span className="text-[#b5e409]">CEYLON</span>
             </div>
 
             {/* Tagline */}
