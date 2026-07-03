@@ -17,12 +17,12 @@ export default function SocialProof() {
   return (
     <section style={{ background: '#FAFAFA' }} className="py-24 relative overflow-hidden">
       {/* Organic flowing curved lines - unique pattern */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ opacity: 0.07 }}>
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ opacity: 0.20 }}>
         <defs>
           <pattern id="socialproof-waves" patternUnits="userSpaceOnUse" width="300" height="150">
             <path d="M0 75 Q75 40 150 75 T300 75" fill="none" stroke="#b5e409" strokeWidth="1" />
-            <path d="M0 110 Q60 85 120 110 T240 110 T300 110" fill="none" stroke="#b5e409" strokeWidth="0.7" opacity="0.10" />
-            <path d="M0 40 Q50 20 100 40 T200 40 T300 40" fill="none" stroke="#b5e409" strokeWidth="0.5" opacity="0.10" />
+            <path d="M0 110 Q60 85 120 110 T240 110 T300 110" fill="none" stroke="#b5e409" strokeWidth="0.7" opacity="0.7" />
+            <path d="M0 40 Q50 20 100 40 T200 40 T300 40" fill="none" stroke="#b5e409" strokeWidth="0.5" opacity="0.5" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#socialproof-waves)" />
