@@ -6,7 +6,7 @@ const logos = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg', alt: 'AWS', h: 22 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg', alt: 'Figma', h: 22 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg', alt: 'Wordpress', h: 24 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png', alt: 'Microsoft', h: 22 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg', alt: 'Github', h: 22 },
 ];
 
 const allLogos = [...logos, ...logos];
