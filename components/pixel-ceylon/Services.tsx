@@ -57,7 +57,7 @@ function ServiceCard({ s, index }: { s: typeof services[number]; index: number }
         <div className="w-12 h-12 rounded-xl bg-[#60A5FA]/8 border border-[#60A5FA]/15 flex items-center justify-center mb-6 group-hover:bg-[#60A5FA]/12 transition-colors">
           <Icon className="w-5 h-5 text-[#60A5FA]" />
         </div>
-        <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#b5e409] transition-colors">{s.name}</h3>
+        <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#60A5FA] transition-colors">{s.name}</h3>
         <p className="text-sm text-[#7E8190] leading-relaxed">{s.desc}</p>
         <div className="flex items-center gap-1.5 text-sm font-semibold text-[#60A5FA] mt-6 group-hover:gap-3 transition-all duration-200">
           Learn more
