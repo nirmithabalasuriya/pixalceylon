@@ -82,7 +82,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="mb-14"
         >
-          <span className="inline-block bg-[#b5e409]/10 text-[#b5e409] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-4">
+          <span className="inline-block bg-[#60A5FA]/10 text-[#60A5FA] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-4">
             What We Do
           </span>
           <h2
