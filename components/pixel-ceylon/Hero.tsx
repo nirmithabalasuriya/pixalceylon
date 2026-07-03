@@ -78,7 +78,7 @@ export default function Hero() {
             >
               BUILDING
               <br />
-              <span style={{ WebkitTextStroke: '1.5px #2c6ec0', color: 'transparent' }}>
+              <span style={{ WebkitTextStroke: '1.5px #60A5FA', color: 'transparent' }}>
                 DIGITAL
               </span>
               <br />
