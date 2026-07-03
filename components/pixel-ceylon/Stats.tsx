@@ -46,7 +46,7 @@ export default function Stats() {
         }}
       />
       {/* Diagonal technical lines */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.08]" xmlns="http://www.w3.org/2000/svg">
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.02]" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="diagonalLines" patternUnits="userSpaceOnUse" width="100" height="100">
             <line x1="0" y1="100" x2="100" y2="0" stroke="#0A0A0A" strokeWidth="0.5" />
@@ -55,7 +55,7 @@ export default function Stats() {
         <rect width="100%" height="100%" fill="url(#diagonalLines)" />
       </svg>
       {/* Subtle corner accents */}
-      <div className="absolute top-0 left-0 w-40 h-40 pointer-events-none opacity-[0.03]" style={{ background: 'radial-gradient(circle at top left, #b5e409 0%, transparent 70%)' }} />
+      <div className="absolute top-0 left-0 w-40 h-40 pointer-events-none opacity-[0.05]" style={{ background: 'radial-gradient(circle at top left, #b5e409 0%, transparent 70%)' }} />
       <div className="absolute bottom-0 right-0 w-48 h-48 pointer-events-none opacity-[0.02]" style={{ background: 'radial-gradient(circle at bottom right, #b5e409 0%, transparent 70%)' }} />
 
       <div className="max-w-[1200px] mx-auto px-6 md:px-8 relative z-10">
