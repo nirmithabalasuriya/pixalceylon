@@ -59,7 +59,7 @@ function ServiceCard({ s, index }: { s: typeof services[number]; index: number }
         </div>
         <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#b5e409] transition-colors">{s.name}</h3>
         <p className="text-sm text-[#7E8190] leading-relaxed">{s.desc}</p>
-        <div className="flex items-center gap-1.5 text-sm font-semibold text-[#b5e409] mt-6 group-hover:gap-3 transition-all duration-200">
+        <div className="flex items-center gap-1.5 text-sm font-semibold text-[#60A5FA] mt-6 group-hover:gap-3 transition-all duration-200">
           Learn more
           <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </div>
