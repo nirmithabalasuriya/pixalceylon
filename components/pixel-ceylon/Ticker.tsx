@@ -7,8 +7,9 @@ const logos = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg', alt: 'Figma', h: 22 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg', alt: 'Wordpress', h: 24 },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg', alt: 'Github', h: 22 },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg', alt: 'Github', h: 22 },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg', alt: 'Github', h: 22 },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Google_Cloud_icon_%282026%29.svg', alt: 'googlecloud', h: 22 },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Webflow_logo.svg', alt: 'webflow', h: 22 },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg', alt: 'react', h: 22 },
 ];
 
 const allLogos = [...logos, ...logos];
