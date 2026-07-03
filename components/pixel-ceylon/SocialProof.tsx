@@ -17,7 +17,7 @@ export default function SocialProof() {
   return (
     <section style={{ background: '#FAFAFA' }} className="py-24 relative overflow-hidden">
       {/* Organic flowing curved lines - unique pattern */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ opacity: 0.10 }}>
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ opacity: 0.07 }}>
         <defs>
           <pattern id="socialproof-waves" patternUnits="userSpaceOnUse" width="300" height="150">
             <path d="M0 75 Q75 40 150 75 T300 75" fill="none" stroke="#b5e409" strokeWidth="1" />
@@ -38,7 +38,7 @@ export default function SocialProof() {
         style={{
           backgroundImage: `radial-gradient(circle, rgba(181,228,9,0.4) 1px, transparent 1px)`,
           backgroundSize: '48px 48px',
-          opacity: 0.5,
+          opacity: 0.10,
         }}
       />
 
