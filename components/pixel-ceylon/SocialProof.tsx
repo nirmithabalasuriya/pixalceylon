@@ -17,7 +17,7 @@ export default function SocialProof() {
   return (
     <section style={{ background: '#FAFAFA' }} className="py-24 relative overflow-hidden">
       {/* Organic flowing wave pattern */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.03]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.10]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <defs>
           <pattern id="waves" patternUnits="userSpaceOnUse" width="200" height="100">
             <path d="M0 50 Q25 30 50 50 T100 50 T150 50 T200 50" fill="none" stroke="#b5e409" strokeWidth="0.5" opacity="0.6" />
