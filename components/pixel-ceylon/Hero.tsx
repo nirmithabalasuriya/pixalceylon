@@ -18,7 +18,7 @@ export default function Hero() {
     >
       {/* Premium subtle dot grid texture */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
+        className="absolute inset-0 pointer-events-none opacity-[0.10]"
         style={{
           backgroundImage: `radial-gradient(circle, #0A0A0A 1px, transparent 1px)`,
           backgroundSize: '32px 32px',
