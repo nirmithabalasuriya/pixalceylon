@@ -27,11 +27,11 @@ export default function SocialProof() {
         <rect width="100%" height="100%" fill="url(#waves)" />
       </svg>
       {/* Circular mesh gradient overlay */}
-      <div className="absolute top-[20%] left-[5%] w-[500px] h-[500px] rounded-full pointer-events-none opacity-[0.10]" style={{ background: 'radial-gradient(ellipse at center, rgba(181,228,9,0.15) 0%, transparent 60%)', filter: 'blur(80px)' }} />
-      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] rounded-full pointer-events-none opacity-[0.03]" style={{ background: 'radial-gradient(ellipse at center, rgba(100,120,255,0.12) 0%, transparent 60%)', filter: 'blur(60px)' }} />
+      <div className="absolute top-[20%] left-[5%] w-[500px] h-[500px] rounded-full pointer-events-none opacity-[0.20]" style={{ background: 'radial-gradient(ellipse at center, rgba(181,228,9,0.15) 0%, transparent 60%)', filter: 'blur(80px)' }} />
+      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] rounded-full pointer-events-none opacity-[0.03]" style={{ background: 'radial-gradient(ellipse at center, rgba(100,120,255,0.12) 0%, transparent 80%)', filter: 'blur(80px)' }} />
       {/* Scattered dot field */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.15]"
+        className="absolute inset-0 pointer-events-none opacity-[0.015]"
         style={{
           backgroundImage: `radial-gradient(circle, #b5e409 1.5px, transparent 1.5px)`,
           backgroundSize: '60px 60px',
