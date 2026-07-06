@@ -7,7 +7,7 @@ import { Menu, X } from 'lucide-react';
 const links = [
   { label: 'Services', href: '#services' },
   { label: 'Results', href: '#stats' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Work', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -37,14 +37,14 @@ export default function Nav() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-      ? 'bg-black/40 backdrop-blur-2xl border-b border-white/10'
-      : 'bg-transparent'
-  }`}
+            ? 'bg-[#07080D]/90 backdrop-blur-xl border-b border-[#1E2130]'
+            : 'bg-transparent'
+        }`}
       >
         <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-4 flex items-center justify-between gap-8">
           {/* Logo */}
           <a href="#home" className="font-['Bebas_Neue'] text-2xl tracking-widest text-white shrink-0">
-            <span className="text-[#60A5FA]">PIXEL</span> <span className="text-[#b5e409]">CEYLON</span>
+            PIXEL <span className="text-[#b5e409]">CEYLON</span>
           </a>
 
           {/* Desktop links */}
@@ -53,7 +53,7 @@ export default function Nav() {
               <li key={l.label}>
                 <button
                   onClick={() => handleLink(l.href)}
-                  className="text-sm font-semibold text-[#4C4C4C] hover:text-[#60A5FA] duration-200"
+                  className="text-sm font-medium text-[#7E8190] hover:text-white transition-colors duration-200"
                 >
                   {l.label}
                 </button>

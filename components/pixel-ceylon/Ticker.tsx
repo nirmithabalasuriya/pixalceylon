@@ -1,15 +1,12 @@
 'use client';
 
 const logos = [
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg', alt: 'Nextjs', h: 25 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', alt: 'tailwind', h: 28 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg', alt: 'AWS', h: 30 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg', alt: 'Figma', h: 30 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg', alt: 'Wordpress', h: 30 },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_logo_2013.svg', alt: 'Github', h: 25 },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Google_Cloud_icon_%282026%29.svg', alt: 'googlecloud', h: 30 },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Webflow_logo.svg', alt: 'webflow', h: 28 },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg', alt: 'react', h: 28 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png', alt: 'Amazon', h: 20 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png', alt: 'Netflix', h: 20 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Googlelogo_2013.svg/1000px-Googlelogo_2013.svg.png', alt: 'Google', h: 22 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1000px-IBM_logo.svg.png', alt: 'IBM', h: 22 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png', alt: 'Apple', h: 24 },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png', alt: 'Microsoft', h: 22 },
 ];
 
 const allLogos = [...logos, ...logos];

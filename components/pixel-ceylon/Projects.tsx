@@ -42,12 +42,12 @@ function ProjectRow({ p, index }: { p: typeof projects[number]; index: number })
     >
       <Link
         href={`/work/${p.slug}`}
-        className="group grid grid-cols-[60px_1fr] md:grid-cols-[60px_1fr_auto_auto] items-center gap-4 md:gap-8 px-6 md:px-8 py-6 bg-[#0F1117] border border-[#1E2130] rounded-xl hover:bg-[#181B25] hover:border-[#60A5FA]/15 transition-all duration-300 block"
+        className="group grid grid-cols-[60px_1fr] md:grid-cols-[60px_1fr_auto_auto] items-center gap-4 md:gap-8 px-6 md:px-8 py-6 bg-[#0F1117] border border-[#1E2130] rounded-xl hover:bg-[#181B25] hover:border-[#b5e409]/15 transition-all duration-300 block"
       >
         <div className="font-['Space_Mono'] text-[12px] text-[#7E8190]">{p.num}</div>
 
         <div>
-          <div className="text-lg font-bold text-white group-hover:text-[#60A5FA] transition-colors duration-200">
+          <div className="text-lg font-bold text-white group-hover:text-[#b5e409] transition-colors duration-200">
             {p.name}
           </div>
           <div className="text-[13px] text-[#7E8190] mt-0.5">{p.type}</div>
@@ -64,10 +64,10 @@ function ProjectRow({ p, index }: { p: typeof projects[number]; index: number })
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-2 text-[13px] font-semibold text-[#60A5FA]">
+        <div className="hidden md:flex items-center gap-2 text-[13px] font-semibold text-[#b5e409]">
           View Case Study
-          <div className="w-9 h-9 rounded-full border border-[#60A5FA]/30 flex items-center justify-center group-hover:bg-[#60A5FA] group-hover:border-[#60A5FA] transition-all duration-200">
-            <ArrowUpRight className="w-4 h-4 group-hover:text-black text-[#60A5FA] transition-colors duration-200" />
+          <div className="w-9 h-9 rounded-full border border-[#b5e409]/30 flex items-center justify-center group-hover:bg-[#b5e409] group-hover:border-[#b5e409] transition-all duration-200">
+            <ArrowUpRight className="w-4 h-4 group-hover:text-black text-[#b5e409] transition-colors duration-200" />
           </div>
         </div>
       </Link>
@@ -90,7 +90,7 @@ export default function Projects() {
           className="flex justify-between items-end mb-12"
         >
           <div>
-            <span className="inline-block bg-[#60A5FA]/10 text-[#60A5FA] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-4">
+            <span className="inline-block bg-[#b5e409]/10 text-[#b5e409] border border-[#b5e409]/20 rounded-full text-[11px] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 mb-4">
               Case Studies
             </span>
             <h2
@@ -100,7 +100,7 @@ export default function Projects() {
               Our Work
             </h2>
           </div>
-          <a href="#" className="text-sm font-semibold text-[#60A5FA] hover:underline hidden sm:block">
+          <a href="#" className="text-sm font-semibold text-[#b5e409] hover:underline hidden sm:block">
             View all projects →
           </a>
         </motion.div>

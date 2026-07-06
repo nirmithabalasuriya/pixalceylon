@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="absolute bottom-20 left-[10%] w-[300px] h-[300px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(100,120,255,0.04) 0%, transparent 70%)', filter: 'blur(60px)' }} />
 
       {/* Pixel deco */}
-      <div className="absolute top-16 right-16 opacity-[0.50] pointer-events-none hidden lg:block">
+      <div className="absolute top-16 right-16 opacity-[0.06] pointer-events-none hidden lg:block">
         <svg width="180" height="180" viewBox="0 0 200 200">
           {[[0,0],[16,16],[32,0],[48,32],[0,48],[64,16],[80,48],[16,64],[96,0]].map(([x,y],i) => (
             <rect key={i} x={x} y={y} width="8" height="8" fill="#b5e409" />
@@ -78,7 +78,7 @@ export default function Hero() {
             >
               BUILDING
               <br />
-              <span style={{ WebkitTextStroke: '1.5px #60A5FA', color: 'transparent' }}>
+              <span style={{ WebkitTextStroke: '1.5px #b5e409', color: 'transparent' }}>
                 DIGITAL
               </span>
               <br />
