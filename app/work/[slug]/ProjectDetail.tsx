@@ -271,13 +271,13 @@ export default function ProjectDetail({ project }: { project: Project }) {
             transition={{ duration: 0.6 }}
           >
             <p className="text-[#7E8190] text-sm mb-4">Ready to start your project?</p>
-            <Link
+            <a
               href="/#contact"
               className="inline-flex items-center gap-2 bg-[#b5e409] text-black font-bold text-sm px-7 py-4 rounded-xl hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
             >
               Get a Free Proposal
               <ArrowUpRight className="w-4 h-4" />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>

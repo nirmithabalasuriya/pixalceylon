@@ -188,13 +188,13 @@ export default function ServiceDetail({ service }: { service: Service }) {
               <div className="p-6 rounded-xl bg-[#0F1117] border border-[#1E2130]">
                 <p className="text-[11px] font-semibold text-[#7E8190] uppercase tracking-[0.1em] mb-3">Ready to start?</p>
                 <p className="text-[#A0A1B0] text-sm mb-5">Let us help you achieve your goals with our {service.name.toLowerCase()} expertise.</p>
-                <Link
+                <a
                   href="/#contact"
                   className="flex items-center justify-between p-4 rounded-xl bg-[#b5e409] text-black font-bold text-sm hover:bg-[#A8D900] transition-all duration-200 group"
                 >
                   <span>Get a Free Quote</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </Link>
+                </a>
               </div>
 
               <div className="p-6 rounded-xl bg-gradient-to-br from-[#b5e409]/5 to-transparent border border-[#b5e409]/15">
@@ -269,13 +269,13 @@ export default function ServiceDetail({ service }: { service: Service }) {
             transition={{ duration: 0.6 }}
           >
             <p className="text-[#7E8190] text-sm mb-4">Ready to get started?</p>
-            <Link
+            <a
               href="/#contact"
               className="inline-flex items-center gap-2 bg-[#b5e409] text-black font-bold text-sm px-7 py-4 rounded-xl hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
             >
               Get a Free Proposal
               <ArrowUpRight className="w-4 h-4" />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
