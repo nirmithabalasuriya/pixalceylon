@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import ServiceDetail from './ServiceDetail';
+import { generateServiceMetadata, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo';
+import { StructuredData } from '@/components/seo/StructuredData';
 
 type Service = {
   id: string;
@@ -41,17 +43,15 @@ async function getService(slug: string): Promise<Service | null> {
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const service = await getService(params.slug);
-  if (!service) return { title: 'Service Not Found' };
+  if (!service) {
+    return {
+      title: 'Service Not Found',
+      description: 'The requested service could not be found.',
+      robots: { index: false, follow: false },
+    };
+  }
 
-  return {
-    title: `${service.name} Services — Pixel Ceylon`,
-    description: service.intro,
-    openGraph: {
-      title: `${service.name} Services — Pixel Ceylon`,
-      description: service.intro,
-      images: service.image_url ? [{ url: service.image_url }] : [],
-    },
-  };
+  return generateServiceMetadata(service);
 }
 
 export async function generateStaticParams() {
@@ -63,5 +63,23 @@ export default async function ServicePage({ params }: { params: { slug: string }
   const service = await getService(params.slug);
   if (!service) notFound();
 
-  return <ServiceDetail service={service} />;
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/#services' },
+    { name: service.name, url: `/services/${service.slug}` },
+  ];
+
+  const structuredData = [
+    generateServiceSchema(service),
+    generateBreadcrumbSchema(breadcrumbs),
+  ];
+
+  return (
+    <>
+      {/* Structured Data for SEO */}
+      <StructuredData data={structuredData} id="service-page-structured-data" />
+
+      <ServiceDetail service={service} />
+    </>
+  );
 }

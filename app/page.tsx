@@ -7,19 +7,25 @@ import Projects from '@/components/pixel-ceylon/Projects';
 import SocialProof from '@/components/pixel-ceylon/SocialProof';
 import CTA from '@/components/pixel-ceylon/CTA';
 import Footer from '@/components/pixel-ceylon/Footer';
+import { HomeStructuredData } from '@/components/seo/HomeStructuredData';
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
-      <Hero />
-      <Ticker />
-      <Services />
-      <Stats />
-      <Projects />
-      <SocialProof />
-      <CTA />
-      <Footer />
-    </main>
+    <>
+      {/* Structured Data for SEO */}
+      <HomeStructuredData />
+
+      <main>
+        <Nav />
+        <Hero />
+        <Ticker />
+        <Services />
+        <Stats />
+        <Projects />
+        <SocialProof />
+        <CTA />
+        <Footer />
+      </main>
+    </>
   );
 }
