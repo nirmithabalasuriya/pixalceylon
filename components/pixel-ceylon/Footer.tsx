@@ -1,12 +1,13 @@
 'use client';
 
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import Link from 'next/link';
+import { Facebook, Instagram, Linkedin, Twitter, Mail, MapPin } from 'lucide-react';
 
 const quickLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Results', href: '#stats' },
-  { label: 'Work', href: '#work' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Results', href: '/#stats' },
+  { label: 'Work', href: '/#projects' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 const socials = [
@@ -85,9 +86,9 @@ export default function Footer() {
           {/* Main footer content */}
           <div className="flex flex-col items-center text-center mb-14">
             {/* Logo */}
-            <div className="font-['Bebas_Neue'] text-[28px] tracking-[0.2em] text-white mb-4">
+            <Link href="/" className="font-['Bebas_Neue'] text-[28px] tracking-[0.2em] text-white mb-4">
               PIXEL <span className="text-[#b5e409]">CEYLON</span>
-            </div>
+            </Link>
 
             {/* Tagline */}
             <p className="text-sm text-[#7E8190] tracking-wide max-w-[320px] mb-8">
@@ -97,13 +98,13 @@ export default function Footer() {
             {/* Quick Links */}
             <nav className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10">
               {quickLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   className="text-sm text-[#A0A1B0] hover:text-white transition-colors duration-200 font-medium tracking-wide"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
 

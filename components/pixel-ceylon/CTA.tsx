@@ -2,10 +2,17 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 export default function CTA() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+    e.preventDefault();
+    const el = document.querySelector(hash);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section style={{ background: '#0F1117', borderTop: '1px solid #1E2130', borderBottom: '1px solid #1E2130' }}>
@@ -34,18 +41,20 @@ export default function CTA() {
           </div>
 
           <div className="flex flex-col gap-3 min-w-[220px]">
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
+              onClick={(e) => handleSmoothScroll(e, '#contact')}
               className="bg-[#b5e409] text-black font-bold text-[15px] px-8 py-4 rounded-xl text-center hover:bg-[#A8D900] transition-all duration-200 hover:-translate-y-0.5"
             >
-              Book a Free Call →
-            </a>
-            <a
-              href="#projects"
+              Book a Free Call
+            </Link>
+            <Link
+              href="/#projects"
+              onClick={(e) => handleSmoothScroll(e, '#projects')}
               className="border border-[#1E2130] text-white font-semibold text-[15px] px-8 py-4 rounded-xl text-center hover:border-[#7E8190] transition-all duration-200"
             >
               See Our Work
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
