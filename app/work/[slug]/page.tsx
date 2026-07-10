@@ -21,28 +21,41 @@ type Project = {
 };
 
 async function getProject(slug: string): Promise<Project | null> {
-  const { data, error } = await supabase
-    .from('projects')
-    .select('*')
-    .eq('slug', slug)
-    .single();
+  try {
+    const { data, error } = await supabase
+      .from('projects')
+      .select('*')
+      .eq('slug', slug)
+      .maybeSingle();
 
-  if (error || !data) return null;
+    if (error) {
+      console.error('Error fetching project:', error.message, error.details, error.hint);
+      return null;
+    }
 
-  return {
-    id: data.id,
-    slug: data.slug,
-    name: data.name,
-    client_type: data.client_type,
-    tags: data.tags || [],
-    summary: data.summary,
-    description: data.description,
-    features: data.features || [],
-    image_url: data.image_url,
-    gallery: data.gallery || [],
-    external_url: data.external_url,
-    display_order: data.display_order,
-  };
+    if (!data) {
+      console.log('No project found for slug:', slug);
+      return null;
+    }
+
+    return {
+      id: data.id,
+      slug: data.slug,
+      name: data.name,
+      client_type: data.client_type,
+      tags: data.tags || [],
+      summary: data.summary,
+      description: data.description,
+      features: data.features || [],
+      image_url: data.image_url,
+      gallery: data.gallery || [],
+      external_url: data.external_url,
+      display_order: data.display_order,
+    };
+  } catch (err) {
+    console.error('Exception fetching project:', err);
+    return null;
+  }
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {

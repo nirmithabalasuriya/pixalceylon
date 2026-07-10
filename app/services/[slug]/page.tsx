@@ -19,26 +19,39 @@ type Service = {
 };
 
 async function getService(slug: string): Promise<Service | null> {
-  const { data, error } = await supabase
-    .from('services')
-    .select('*')
-    .eq('slug', slug)
-    .single();
+  try {
+    const { data, error } = await supabase
+      .from('services')
+      .select('*')
+      .eq('slug', slug)
+      .maybeSingle();
 
-  if (error || !data) return null;
+    if (error) {
+      console.error('Error fetching service:', error.message, error.details, error.hint);
+      return null;
+    }
 
-  return {
-    id: data.id,
-    slug: data.slug,
-    num: data.num,
-    name: data.name,
-    intro: data.intro,
-    description: data.description,
-    tech_stack: data.tech_stack || [],
-    features: data.features || [],
-    image_url: data.image_url,
-    icon: data.icon,
-  };
+    if (!data) {
+      console.log('No service found for slug:', slug);
+      return null;
+    }
+
+    return {
+      id: data.id,
+      slug: data.slug,
+      num: data.num,
+      name: data.name,
+      intro: data.intro,
+      description: data.description,
+      tech_stack: data.tech_stack || [],
+      features: data.features || [],
+      image_url: data.image_url,
+      icon: data.icon,
+    };
+  } catch (err) {
+    console.error('Exception fetching service:', err);
+    return null;
+  }
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
