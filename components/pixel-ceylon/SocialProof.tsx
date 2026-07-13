@@ -3,11 +3,49 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+function ClientLogo({ id }: { id: string }) {
+  return (
+    <svg viewBox="0 0 64 64" className="w-8 h-8" aria-hidden="true">
+      <defs>
+        <linearGradient id={`grad-${id}`} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#0A0A0A" />
+          <stop offset="100%" stopColor="#4B5563" />
+        </linearGradient>
+      </defs>
+      {id === 'a' && (
+        <>
+          <circle cx="32" cy="32" r="20" fill={`url(#grad-${id})`} />
+          <circle cx="32" cy="32" r="10" fill="none" stroke="#b5e409" strokeWidth="2.5" />
+        </>
+      )}
+      {id === 'b' && (
+        <>
+          <rect x="14" y="14" width="36" height="36" rx="8" fill={`url(#grad-${id})`} />
+          <path d="M22 42 L32 22 L42 42" fill="none" stroke="#b5e409" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        </>
+      )}
+      {id === 'c' && (
+        <>
+          <path d="M32 12 L52 32 L32 52 L12 32 Z" fill={`url(#grad-${id})`} />
+          <circle cx="32" cy="32" r="6" fill="#b5e409" />
+        </>
+      )}
+      {id === 'd' && (
+        <>
+          <rect x="12" y="26" width="40" height="12" rx="6" fill={`url(#grad-${id})`} />
+          <circle cx="24" cy="32" r="3" fill="#b5e409" />
+          <circle cx="40" cy="32" r="3" fill="#b5e409" />
+        </>
+      )}
+    </svg>
+  );
+}
+
 const clients = [
-  { icon: '🏟️', name: 'Client A', platform: 'Instagram · Business', count: '64K+', label: 'Followers grown' },
-  { icon: '🎵', name: 'Client B', platform: 'Facebook · Entertainment', count: '26K+', label: 'Followers grown' },
-  { icon: '🌿', name: 'Client C', platform: 'Instagram · Lifestyle', count: '3.8K+', label: 'Followers grown' },
-  { icon: '🏡', name: 'Client D', platform: 'Facebook · Real Estate', count: '14K+', label: 'Followers grown' },
+  { logoId: 'a', name: 'Client A', platform: 'Instagram · Business', count: '64K+', label: 'Followers grown' },
+  { logoId: 'b', name: 'Client B', platform: 'Facebook · Entertainment', count: '26K+', label: 'Followers grown' },
+  { logoId: 'c', name: 'Client C', platform: 'Instagram · Lifestyle', count: '3.8K+', label: 'Followers grown' },
+  { logoId: 'd', name: 'Client D', platform: 'Facebook · Real Estate', count: '14K+', label: 'Followers grown' },
 ];
 
 export default function SocialProof() {
@@ -83,8 +121,8 @@ export default function SocialProof() {
               transition={{ duration: 0.55, delay: i * 0.1 }}
               className="bg-white border border-[#E5E5E5] rounded-2xl p-7 text-center hover:border-[#b5e409]/40 transition-colors duration-300 shadow-sm shadow-black/5"
             >
-              <div className="w-16 h-16 rounded-full bg-[#F5F5F5] border-2 border-[#E5E5E5] flex items-center justify-center text-2xl mx-auto mb-4">
-                {c.icon}
+              <div className="w-16 h-16 rounded-full bg-[#F5F5F5] border-2 border-[#E5E5E5] flex items-center justify-center mx-auto mb-4">
+                <ClientLogo id={c.logoId} />
               </div>
               <div className="text-[15px] font-bold text-[#0A0A0A] mb-1">{c.name}</div>
               <div className="text-[12px] text-[#6B7280] mb-5">{c.platform}</div>

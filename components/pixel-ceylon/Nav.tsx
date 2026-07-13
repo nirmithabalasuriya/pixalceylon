@@ -48,9 +48,9 @@ export default function Nav() {
             <Image
               src="/white.svg"
               alt="Pixel Ceylon"
-              width={120}
-              height={60}
-              className="h-8 w-auto"
+              width={160}
+              height={80}
+              className="h-11 w-auto"
               priority
             />
           </a>

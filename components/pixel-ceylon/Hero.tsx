@@ -1,12 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Rocket, Globe, Users } from 'lucide-react';
 import ContactForm from './ContactForm';
 
 const badges = [
-  { icon: '⚡', label: '2–3 Week Delivery' },
-  { icon: '🌍', label: '4+ Countries Served' },
-  { icon: '✦', label: '23+ Happy Clients' },
+  { icon: Rocket, label: '2–3 Week Delivery' },
+  { icon: Globe, label: '4+ Countries Served' },
+  { icon: Users, label: '23+ Happy Clients' },
 ];
 
 export default function Hero() {
@@ -105,7 +106,7 @@ export default function Hero() {
                   key={b.label}
                   className="flex items-center gap-2 bg-[#F5F5F5] border border-[#E5E5E5] rounded-lg px-3.5 py-2 text-[13px] text-[#1F2937]"
                 >
-                  <span className="text-[#0A0A0A] font-bold text-base">{b.icon}</span>
+                  <b.icon className="w-4 h-4 text-[#0A0A0A]" strokeWidth={2} />
                   {b.label}
                 </div>
               ))}
