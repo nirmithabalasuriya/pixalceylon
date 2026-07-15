@@ -9,6 +9,8 @@ import CTA from '@/components/pixel-ceylon/CTA';
 import Footer from '@/components/pixel-ceylon/Footer';
 import { HomeStructuredData } from '@/components/seo/HomeStructuredData';
 
+export const revalidate = 60;
+
 export default function Home() {
   return (
     <>

@@ -68,9 +68,15 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export async function generateStaticParams() {
-  const { data } = await supabase.from('services').select('slug');
-  return (data || []).map((s) => ({ slug: s.slug }));
+  try {
+    const { data } = await supabase.from('services').select('slug');
+    return (data || []).map((s) => ({ slug: s.slug }));
+  } catch {
+    return [];
+  }
 }
+
+export const revalidate = 60;
 
 export default async function ServicePage({ params }: { params: { slug: string } }) {
   const service = await getService(params.slug);
